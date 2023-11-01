@@ -36,3 +36,8 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+# ignore created text, json, xml files
+src/main/resources/text/*
+src/main/resources/json/*
+src/main/resources/xml/*
