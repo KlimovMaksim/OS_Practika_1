@@ -1,4 +1,4 @@
-package ru.klimov.exercise;
+package ru.klimov.exercise.handlers;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
