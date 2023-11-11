@@ -1,5 +1,7 @@
 package ru.klimov.exercise;
 
+import java.io.IOException;
+
 public class Person {
     private String firstName;
     private String lastName;
@@ -22,7 +24,7 @@ public class Person {
             this.lastName = parts[1];
             this.age = Integer.parseInt(parts[2]);
         } else {
-            throw new Exception("Некорректные данные");
+            throw new IOException("Некорректные данные");
         }
     }
 
