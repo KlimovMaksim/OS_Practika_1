@@ -39,7 +39,7 @@ public abstract class AbstractHandler {
 
     protected abstract void read(Path path);
 
-    private void setPath(String fileName) {
+    protected void setPath(String fileName) {
         path = Paths.get(FILE_ROOT, fileName + fileExtension);
     }
 
