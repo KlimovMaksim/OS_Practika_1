@@ -16,7 +16,7 @@ public class FileHandler extends AbstractHandler{
             Files.write(path, line.getBytes(), StandardOpenOption.APPEND);
             System.out.println("В файл добавлена строка: " + line);
         } catch (IOException e) {
-            System.out.println("Ошибка записи в файл: " + e.getMessage());;
+            System.out.println("Ошибка записи в файл: " + e.getMessage());
         }
     }
 
