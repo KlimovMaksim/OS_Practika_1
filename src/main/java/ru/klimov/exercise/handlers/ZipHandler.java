@@ -57,6 +57,7 @@ public class ZipHandler extends AbstractHandler{
         {
             Path nf = fs.getPath(fileToAdd);
             Files.write(nf, Files.readAllBytes(Paths.get(path.getParent() + "/" + fileToAdd)), StandardOpenOption.CREATE);
+            System.out.println("Файл " + fileToAdd + " добавлен к архиву " + path.getFileName());
         } catch (IOException e) {
             System.out.println("Ошибка добавления файла в архив: " + e.getMessage());;
         }
